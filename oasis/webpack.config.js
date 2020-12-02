@@ -9,5 +9,16 @@ module.exports = {
   },
   node: {
     fs: 'empty'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
   }
 };
