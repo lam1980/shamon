@@ -40,4 +40,9 @@ const getData = async address => {
   return secretData;
 };
 
+module.exports = {
+  upload: upload,
+  getData: getData
+};
+
 // upload('helloooooo').then(e => getData(e));
